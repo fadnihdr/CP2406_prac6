@@ -2,24 +2,21 @@
  * Created by fadni on 20/12/2016.
  */
 public abstract class Book {
-    String title;
+
+    String title = new String();
     double price;
 
-    Book(String bookTitle, double bookPrice){
-        title = bookTitle;
-        price = bookPrice;
+    public Book(String t) {
+        title = t;
     }
 
     public String getTitle() {
         return title;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
     public double getPrice() {
         return price;
     }
-    abstract double setPrice();
+    public abstract void setPrice();
+
 }

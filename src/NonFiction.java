@@ -1,16 +1,15 @@
 /**
  * Created by fadni on 20/12/2016.
  */
-public abstract class NonFiction extends Book {
+public class NonFiction extends Book {
 
-    NonFiction(String bookTitle, double bookPrice)
-    {
-        super(bookTitle,bookPrice);
-
+    public NonFiction(String title) {
+        super(title);
+        setPrice();
     }
-    public double setPrice() {
-        this.price = 37.99;
-        return price;
+
+    public void setPrice() {
+        super.price=37.99;
     }
 
 }
