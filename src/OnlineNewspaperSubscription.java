@@ -4,9 +4,9 @@
 
 public class OnlineNewspaperSubscription extends NewspaperSubscription
 {
-    OnlineNewspaperSubscription(String nm, String add, double rt)
+    OnlineNewspaperSubscription(String cus_name, String cus_add, double cus_rate)
     {
-        super(nm,add,rt);
+        super(cus_name,cus_add,cus_rate);
         setAddress();
     }
     public void setAddress()

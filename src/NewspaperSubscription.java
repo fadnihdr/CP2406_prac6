@@ -6,11 +6,11 @@ public abstract class NewspaperSubscription {
     protected String address;
     protected double rate;
 
-    NewspaperSubscription(String nm, String add, double rt)
+    NewspaperSubscription(String cus_name, String cus_add, double cus_rate)
     {
-        name = nm;
-        address = add;
-        rate = rt;
+        name = cus_name;
+        address = cus_add;
+        rate = cus_rate;
     }
 
     public String getName() {

@@ -4,9 +4,9 @@
 
 public class PhysicalNewspaperSubscription extends NewspaperSubscription {
 
-    PhysicalNewspaperSubscription(String nm, String add, double rt)
+    PhysicalNewspaperSubscription(String cus_name, String cus_add, double cus_rate)
     {
-        super(nm,add,rt);
+        super(cus_name,cus_add,cus_rate);
         setAddress();
     }
     public void setAddress()
